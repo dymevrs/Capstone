@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.HomePageController">
+   <left>
+      <VBox prefHeight="150.0" prefWidth="100.0" style="-fx-background-color: #243f80; -fx-border-color: #bdbd1a; -fx-border-width: 0px 3px 0px 0px;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="HomePageButton" onAction="#SwitchToHomePage" prefHeight="150.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-border-color: #bdbd1a; -fx-border-width: 0px 0px 3px 0px; -fx-text-fill: WHITE;" text="Home Page" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="CalendarButton" onAction="#SwitchToCalendar" prefHeight="150.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-border-color: #bdbd1a; -fx-border-width: 0px 0px 3px 0px; -fx-text-fill: WHITE;" text="Calendar" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="AbsenceReporterButton" onAction="#SwitchToAbsenceReporter" prefHeight="157.0" prefWidth="97.0" style="-fx-background-color: transparent; -fx-text-fill: WHITE;" text="Absence Reporter" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #d3d8e3;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="137.0" layoutY="14.0" text="Home Page">
+               <font>
+                  <Font name="Berlin Sans FB" size="45.0" />
+               </font>
+            </Label>
+            <Text layoutX="78.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to the River Valley Middle School parent resource application. Here you can be directed to upcoming school hosted events, as well as easily report an upcoming student absence to the school." wrappingWidth="343.5429229736328">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="169.0" fitWidth="267.0" layoutX="125.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="178.0" fitWidth="369.0" layoutX="54.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@MainLogo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

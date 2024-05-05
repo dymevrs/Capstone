@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #d3d8e3;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.EmailToolController">
+   <children>
+      <TextArea fx:id="ReasonText" layoutX="65.0" layoutY="175.0" prefHeight="143.0" prefWidth="470.0" />
+      <TextField fx:id="ChildNameText" layoutX="300.0" layoutY="28.0" promptText="FirstName LastName" />
+      <Text layoutX="150.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please list your child's full first and last name:" wrappingWidth="120.0" />
+      <Text layoutX="33.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please describe why your child will be absent." />
+      <Text layoutX="300.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(Attempt to include as much detail as possible.)" />
+      <Button fx:id="GenerateEmailButton" layoutX="225.0" layoutY="326.0" mnemonicParsing="false" onAction="#Submit" prefHeight="59.0" prefWidth="150.0" text="Generate Email" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <DatePicker fx:id="DatePicker" layoutX="300.0" layoutY="65.0" />
+      <Text layoutX="176.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of absence:" wrappingWidth="97.33331298828125" />
+      <TextField fx:id="AdultNameText" layoutX="300.0" layoutY="103.0" promptText="FirstName LastName" />
+      <Text layoutX="165.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please list your full first and last name:" wrappingWidth="120.0" />
+   </children>
+</AnchorPane>
